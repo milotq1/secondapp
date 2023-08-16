@@ -1,0 +1,90 @@
+.all-content {
+  justify-content: center;
+  align-items: center;
+  padding: 20px 250px;
+  // font-family: 'Montserrat', sans-serif;
+
+  .title {
+    text-align: center;
+
+    .p-title {
+      font-size: 45px;
+      font-style: normal;
+    }
+
+    p {
+      font-style: italic;
+      font-size: 18px;
+    }
+  }
+
+  .plink-wrapper {
+    text-align: center;
+    color: #152b65;
+    margin-top: 80px;
+    display: block;
+
+    a {
+      text-underline-offset: 8px;
+
+      &:hover {
+        color: rgb(172, 39, 146);
+      }
+    }
+  }
+
+  .cars-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+
+    img {
+      height: 45%;
+      width: 45%;
+      padding-right: 40px;
+    }
+
+    h2 {
+      font-weight: 400;
+    }
+
+    button {
+      background-color: #3151aa;
+      color: white;
+      border-radius: 50px;
+      text-decoration: none;
+      border-color: transparent;
+      font-weight: 700;
+      font-size: 0.9375rem;
+      // background-image: none;
+      margin: 20px auto 0 0;
+      padding: 10px 28px;
+
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        color: white;
+        background-color: orangered;
+      }
+    }
+
+    .seat-img-wrapper {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 10px;
+
+      img {
+        height: 16px;
+        width: auto;
+        padding: 0 7px;
+      }
+
+      p {
+        margin: 0;
+        padding-right: 5px;
+      }
+    }
+  }
+}
+
