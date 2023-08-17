@@ -4,8 +4,26 @@ import secondcar from "../components/images/02.jpg";
 import thirdcar from "../components/images/03.jpg";
 import seat from "../components/images/seat.png";
 import suitcase from  "../components/images/suitcase.png";
+import "../Main/main.scss";
 
-import style from "../Main/main.scss";
+
+const economyCarProps = {
+  seats: 4,
+  suitcase: 2,
+  description: "Quite popular with budget travelers visiting the US (usually for short term travel plans), economy cars fall in the category of low-cost rental solutions. Not only inexpensive, these rental vehicles are also fuel-efficient."
+};
+
+const luxuryCarProps = {
+  seats: 5,
+  suitcase: 2,
+  description: "Customers visiting America rent luxury cars for business, vacations and other special life occasions like anniversaries. They are used mainly for the comfort and the style quotient they add to the trip."
+};
+
+const convertibleCarProps = {
+  seats: 4,
+  suitcase: 2,
+  description: "Convertible cars are perfect for those who want to enjoy the open road and the wind in their hair. They offer a unique driving experience and are ideal for leisurely drives along scenic routes."
+};
 
 function Main() {
   return (
@@ -24,13 +42,12 @@ function Main() {
             <h2>Economy</h2>
             <div className='seat-img-wrapper'>
               <img src={seat} alt="seat" />
-              <p>Seats: 4</p>
+              <p>Seats: {economyCarProps.seats}</p>
               <img src={suitcase} alt="suitcase" />
-              <p>Suitcase: 2</p>
+              <p>Suitcase: {economyCarProps.suitcase}</p>
             </div>
-            <p>Quite popular with budget travelers visiting the US(usually for short term travel plans), economy cars fall in the category of low-cost rental solutions. Not only inexpensive these rental vehicles are also fuel-efficient.</p>
-            <a href="/"><button>Book now</button>
-</a>
+            <p>{economyCarProps.description}</p>
+            <a href="/"><button>Book now</button> </a>
 
         </div>
       </section>
@@ -40,11 +57,12 @@ function Main() {
             <h2>Luxury</h2>
             <div className='seat-img-wrapper'>
               <img src={seat} alt="seat" />
-              <p>Seats: 4</p>
+              <p>Seats: {luxuryCarProps.seats}</p>
               <img src={suitcase} alt="suitcase" />
-              <p>Suitcase: 2</p>
+              <p>Suitcase: {luxuryCarProps.suitcase}</p>
             </div>
-            <p>Customers visiting America rent luxury cars for business, vacations and other special life occasions like anniversaries. They are used mainly for the comfort and the style quotient they add to the trip.</p>
+            <p>{luxuryCarProps.description}</p>
+
             <a href="/"><button>Book now</button></a>
         </div>
       </section>
@@ -54,11 +72,11 @@ function Main() {
             <h2>Convertible</h2>
             <div className='seat-img-wrapper'>
               <img src={seat} alt="seat" />
-              <p>Seats: 4</p>
+              <p>Seats: {convertibleCarProps.seats}</p>
               <img src={suitcase} alt="suitcase" />
-              <p>Suitcase: 2</p>
+              <p>Suitcase: {convertibleCarProps.suitcase}</p>
             </div>
-            <p>Quite popular with budget travelers visiting the US(usually for short term travel plans), economy cars fall in the category of low-cost rental solutions. Not only inexpensive these rental vehicles are also fuel-efficient.</p>
+            <p>{convertibleCarProps.description}</p>
             <a href="/"><button>Book now</button></a>
         </div>
       </section>
